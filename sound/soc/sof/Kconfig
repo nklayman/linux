@@ -221,6 +221,10 @@ config SND_SOC_SOF_DEBUG_IPC_MSG_INJECTOR
 	  Say Y if you want to enable the IPC message injector.
 	  If unsure, select "N".
 
+config SND_SOC_SOF_DEBUG_FW_GDB
+	tristate "SOF enable Firmware GDB debugging"
+	select SND_SOC_SOF_CLIENT
+
 config SND_SOC_SOF_DEBUG_RETAIN_DSP_CONTEXT
 	bool "SOF retain DSP context on any FW exceptions"
 	help
